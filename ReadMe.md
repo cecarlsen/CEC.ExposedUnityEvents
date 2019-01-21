@@ -43,7 +43,7 @@ This can be a great source of annoyance in cases where:
 - You need something to happen only if an event has ANY listeners.
 - You need ALL your listeners displayed in the inspector.
 
-The reasoning behind having two kinds of events is that persistent events are serialized (only allowing references to methods on objects that extend UnityEngine.Object) and runtime events are not serialised (allowing references to any method). Event taking this
+The reasoning behind having two kinds of events is that persistent events are serialized (only allowing references to methods on objects that extend UnityEngine.Object) and runtime events are not serialised (allowing references to any method).
 
 Performance
 -----------
