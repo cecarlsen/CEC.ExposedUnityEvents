@@ -35,11 +35,12 @@ public abstract class ExposedUnityEvent<T> : UnityEvent<T>
 	/// <summary>
 	/// Adds a persistent listener. Beware this is a hack using reflection.
 	/// </summary>
-	public void AddPersistentListener( UnityAction<T> action )
+	public void AddPersistentListener( UnityAction<T> action, UnityEventCallState state = UnityEventCallState.RuntimeOnly )
 	{
 		if( !UnityEventReflection.TryAccessPersistentCalls( this, ref _persistentCallsObject ) ) return;
 		int index = GetPersistentEventCount();
 		UnityEventReflection.AddPersistentListner( _persistentCallsObject, index, action.Target as UnityEngine.Object, action.Method );
+		SetPersistentListenerState( index, state );
 	}
 
 

@@ -29,11 +29,11 @@ namespace ExposedUnityEventTools
 	public class ExposedUnityEventExample : MonoBehaviour
 	{
 		// Four events with different number of arguments.
-		[SerializeField] ExposedEvent _event;
-		[SerializeField] ExposedFloatEvent _floatEvent;
-		[SerializeField] ExposedFloatIntEvent _floatIntEvent;
-		[SerializeField] ExposedFloatIntStringEvent _floatIntStringEvent;
-		[SerializeField] ExposedFloatIntStringBoolEvent _floatIntStringBoolEvent;
+		[SerializeField] ExposedEvent _event = new ExposedEvent();
+		[SerializeField] ExposedFloatEvent _floatEvent = new ExposedFloatEvent();
+		[SerializeField] ExposedFloatIntEvent _floatIntEvent = new ExposedFloatIntEvent();
+		[SerializeField] ExposedFloatIntStringEvent _floatIntStringEvent = new ExposedFloatIntStringEvent();
+		[SerializeField] ExposedFloatIntStringBoolEvent _floatIntStringBoolEvent = new ExposedFloatIntStringBoolEvent();
 
 		// Just like with noemal UnityEvents, you have to extend them with your own type to have them exposed in the inspector.
 		[Serializable] public class ExposedEvent : ExposedUnityEvent { }

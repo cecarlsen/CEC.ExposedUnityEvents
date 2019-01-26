@@ -26,7 +26,7 @@ using System;
 using ExposedUnityEventTools;
 
 [Serializable]
-public abstract class ExposedUnityEvent : UnityEvent
+public class ExposedUnityEvent : UnityEvent
 {
 	object _persistentCallsObject;
 	object _callsObject;

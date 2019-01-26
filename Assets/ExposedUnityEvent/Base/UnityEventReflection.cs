@@ -94,7 +94,7 @@ namespace ExposedUnityEventTools
 			if( _persistentCallsField == null ) _persistentCallsField = typeof( UnityEventBase ).GetField( _persistentCallsFieldName, BindingFlags.NonPublic | BindingFlags.Instance );
 			if( _persistentCallsField == null ) return LogNoLongerWorking( _persistentCallsFieldName );
 
-			if( persistentCallsObject == null ) persistentCallsObject = (_persistentCallsField as FieldInfo).GetValue( e );
+			if( persistentCallsObject == null ) persistentCallsObject = _persistentCallsField.GetValue( e );
 			if( persistentCallsObject == null ) return LogNoLongerWorking( "persistentCallsObject" );
 
 			if( _addListenerMethod == null || _removeListenersMethod == null || _registerEventPersistentListenerMethod == null ) {
@@ -119,7 +119,7 @@ namespace ExposedUnityEventTools
 			if( _callsField == null ) _callsField = typeof( UnityEventBase ).GetField( _callsFieldName, BindingFlags.NonPublic | BindingFlags.Instance );
 			if( _callsField == null ) return LogNoLongerWorking( _callsFieldName );
 
-			if( callsObject == null ) callsObject = (_callsField as FieldInfo).GetValue( e );
+			if( callsObject == null ) callsObject = _callsField.GetValue( e );
 			if( callsObject == null ) return LogNoLongerWorking( "callsObject" );
 
 			if( _countProperty == null ) {

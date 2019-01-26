@@ -29,8 +29,8 @@ namespace ExposedUnityEventTools
 {
 	public class ExposedUnityEventPerformanceTest : MonoBehaviour
 	{
-		[SerializeField] FloatEvent _floatEvent;
-		[SerializeField] ExposedFloatEvent _exposedFloatEvent;
+		[SerializeField] FloatEvent _floatEvent = new FloatEvent();
+		[SerializeField] ExposedFloatEvent _exposedFloatEvent = new ExposedFloatEvent();
 
 		[Serializable] public class FloatEvent : UnityEvent<float> { }
 		[Serializable] public class ExposedFloatEvent : ExposedUnityEvent<float> { }
