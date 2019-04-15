@@ -23,6 +23,7 @@
 
 using System;
 using UnityEngine;
+using CEC.ExposedUnityEvents;
 
 namespace ExposedUnityEventTools
 {

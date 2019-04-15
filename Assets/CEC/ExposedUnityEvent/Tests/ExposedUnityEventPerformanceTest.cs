@@ -25,7 +25,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace ExposedUnityEventTools
+namespace CEC.ExposedUnityEvents.Tests
 {
 	public class ExposedUnityEventPerformanceTest : MonoBehaviour
 	{

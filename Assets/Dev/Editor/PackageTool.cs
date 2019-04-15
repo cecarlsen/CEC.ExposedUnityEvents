@@ -6,6 +6,6 @@ public class PackageTool
     [MenuItem("Package/Update Package")]
     static void UpdatePackage()
     {
-		AssetDatabase.ExportPackage( "Assets/ExposedUnityEvent", "ExposedUnityEvent.unitypackage", ExportPackageOptions.Recurse );
+		AssetDatabase.ExportPackage( "Assets/CEC/ExposedUnityEvent", "CEC.ExposedUnityEvent.unitypackage", ExportPackageOptions.Recurse );
     }
 }

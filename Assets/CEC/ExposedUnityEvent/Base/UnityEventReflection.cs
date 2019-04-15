@@ -26,7 +26,7 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace ExposedUnityEventTools
+namespace CEC.ExposedUnityEvents.Internals
 {
 	public static class UnityEventReflection
 	{

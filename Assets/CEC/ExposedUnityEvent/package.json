@@ -1,0 +1,8 @@
+{
+  "name": "com.cec.exposedunityevents",
+  "displayName": "CEC.ExposedUnityEvents",
+  "version": "0.0.1",
+  "unity": "2018.3",
+  "description": "Reflection based extensions for the build-in UnityEvent.",
+  "keywords": [ "extension", "events" ]
+}
