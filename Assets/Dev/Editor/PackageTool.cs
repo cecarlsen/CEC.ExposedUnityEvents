@@ -7,5 +7,6 @@ public class PackageTool
     static void UpdatePackage()
     {
 		AssetDatabase.ExportPackage( "Assets/CEC/ExposedUnityEvents", "CEC.ExposedUnityEvents.unitypackage", ExportPackageOptions.Recurse );
+        Debug.Log( "Package is build!" );
     }
 }
