@@ -1,7 +1,7 @@
 CEC.ExposedUnityEvents
 ======================
 
-Tested with Unity 2018.3.
+Tested with Unity 2019.1.
 
 Extensions of UnityEvent that expose these methods through reflection:
 
